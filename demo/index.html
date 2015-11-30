@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Defer cache service demo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</head>
+<body ng-app="demoApp">
+
+  <div ng-controller="demoCtrl as ctrl">
+    <ul>
+      <li ng-repeat="item in ctrl.data">{{item}}</li>
+      <ul>
+        
+        <button ng-click="ctrl.loadData()">Load data</button>
+        <button ng-click="ctrl.removeCache()">Remove cache</button>
+        <p ng-if="ctrl.loading">Loading...</p>
+        <p>See console for more info</p>
+  </div>
+
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../src/defer-cache-service.js"></script>
+<script src="demo-app.js"></script>
+
+</body>
+</html>
