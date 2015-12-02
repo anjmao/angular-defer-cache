@@ -1,5 +1,5 @@
 # About
-Angular service to caching things like http requests, resources which returns promise
+Angular service to cache things like http requests, resources and custom defers which returns promise
 
 ## Example
 ```javascript
