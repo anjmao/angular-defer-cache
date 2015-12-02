@@ -3,7 +3,7 @@ Angular service to caching things like http requests, resources which returns pr
 
 ## Example
 ```javascript
-this.deferCacheService.getDeferred<DemoItem[]>('cacke.key1', () => {
+this.deferCacheService.getDeferred('cacke.key1', () => {
   return this.myApiResource.getAllItems().$promise; // this will be called only once
 });
 ```
