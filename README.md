@@ -3,9 +3,7 @@ Angular service to cache things like http requests, resources and custom defers 
 
 ## Example
 ```javascript
-this.deferCacheService.getDeferred('cacke.key1', () => {
-  return this.myApiResource.getAllItems().$promise; // this will be called only once
-});
+this.deferCacheService.getDeferred('cacke.key1', () => this.myApiResource.getAllItems().$promise);
 ```
 
 ## Dev setup
